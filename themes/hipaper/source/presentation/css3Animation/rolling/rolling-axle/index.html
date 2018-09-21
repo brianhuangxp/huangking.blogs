@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .canvas {
+            margin: 100px auto;
+            position: relative;
+            width: 1000px;
+            height: 540px;
+            padding: 45px;
+        }
+        .frame {
+            background: url("frame.png") no-repeat;
+            background-size: contain;
+            padding: 20px;
+        }
+        .frame img {
+            width: 100%;
+        }
+        .axle, .mask {
+            position: absolute;
+            top: 0;
+        }
+
+        .mask {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+        }
+
+        .left {
+            left: calc(-50% + 60px);
+            transition: all 2s ease;
+        }
+        .left .axle {
+            right: -5px;
+        }
+
+        .right {
+            right: calc(-50% + 60px);
+            transition: all 2s ease;
+        }
+        .right .axle {
+            left: -9px;
+        }
+
+        .transition .left {
+            left: -20px;
+        }
+
+        .transition .right {
+            right: -20px;
+        }
+    </style>
+
+    <script>
+        function canvasOnClick() {
+            let canvas = document.getElementsByClassName("canvas")[0]
+            if(canvas.className.indexOf("transition") > -1) {
+                canvas.className = "canvas";
+            } else {
+                canvas.className = "canvas transition";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="canvas" onclick="canvasOnClick()">
+        <div class="left mask">
+            <img src="axle.png" class="axle">
+        </div>
+        <div class="frame">
+            <img src="painting.png">
+        </div>
+        <div class="right mask">
+            <img src="axle.png" class="axle">
+        </div>
+    </div>
+
+</body>
+</html>

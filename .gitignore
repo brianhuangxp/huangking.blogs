@@ -1,3 +1,11 @@
+.idea
+.DS_Store
+Thumbs.db
+db.json
+public/
+.deploy*/
+package-lock.json
+
 # Logs
 logs
 *.log

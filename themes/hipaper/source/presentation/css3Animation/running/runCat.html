@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .Cat {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background: url("images/cat-2-steps.png") no-repeat;
+            background-size: cover;
+            animation: catRun 1s steps(1) infinite;
+        }
+
+        @keyframes catRun {
+            0%{background-position: 0 0;}
+            50%{background-position: 0 -200px}
+            100%{background-position: 0 -800px}
+        }
+
+        /*@keyframes catRun {
+            0%{background-position: 0 0;}
+            50%{background-position: 0 50%}
+            100%{background-position: 0 100%}
+        }*/
+
+        .cat-common{
+            animation: catRun-common 1s steps(2) infinite;
+        }
+
+        @keyframes catRun-common {
+            100%{background-position: 0 100%}
+        }
+
+
+        .new-cat {
+            background-image: url("images/cat-3-steps.png");
+            animation: catRun2 1s steps(1) infinite;
+        }
+
+        @keyframes catRun2 {
+            0%{background-position: 0 0;}
+            33.33333%{background-position: 0 33.33333%}
+            66.66666%{background-position: 0 66.6666%}
+            100%{background-position: 0 100%}
+        }
+
+        .cat-common2{
+            animation: cat-common2 1s steps(3) infinite;
+        }
+
+        @keyframes cat-common2 {
+            100%{background-position: 0 100%}
+        }
+
+
+        .simplify{
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background: url("images/cat-3-steps.png") no-repeat;
+            background-size: cover;
+            animation: cat-common2 1s steps(3) infinite;
+        }
+
+    </style>
+</head>
+<body>
+<div class="simplify"></div>
+<div>
+    <div class="Cat" style="display: none"></div>
+    <div class="Cat cat-common" style="display: none"></div>
+</div>
+<div>
+    <div class="Cat new-cat" style="display: none"></div>
+    <div class="Cat new-cat cat-common2" style="display: none"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+html,body{
+    background:#0b1425;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.stage{
+    height:100%;
+    position:relative;
+    background:#0b1425;
+    overflow: hidden;
+}
+.fire{
+
+    background:url(../images/fire.png) no-repeat;
+    background-size:100% auto;
+    width:120px;
+    height:120px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-40px 0 0 -40px;
+    box-sizing:border-box;
+    background-clip:content-box;
+    border-radius:100%;
+}
+
+.fire:nth-child(1){
+    -webkit-animation:fire 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -1.4s;
+    width:200px;
+    height:200px;
+}
+.fire:nth-child(2){
+    -webkit-animation:fire 2.6s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -1.8s;
+    left:10%;
+    top:10%;
+}
+.fire:nth-child(3){
+    -webkit-animation:fire 1.8s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -0.8s;
+    left:30%;
+    top:30%;
+}
+.fire:nth-child(4){
+    -webkit-animation:fire 2.2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -1.2s;
+    left:70%;
+    top:40%;
+}
+.fire:nth-child(5){
+    -webkit-animation:fire 1.8s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -0.6s;
+    left:20%;
+    top:80%;
+}
+.fire:nth-child(6){
+    -webkit-animation:fire 2.4s cubic-bezier(0.075, 0.82, 0.165, 1) infinite -1s;
+    left:80%;
+    top:60%;
+}
+@-webkit-keyframes fire{
+    0%{ padding:60px; -webkit-transform: scale(0.5) translateY(0);opacity:1;}
+    75%{ padding:0;-webkit-transform: scale(1) translateY(0);}
+    100%{ opacity:0;-webkit-transform:scale(1) translateY(100px);}
+}
