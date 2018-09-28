@@ -25,11 +25,12 @@ https://github.com/brianhuangxp
 
 ## Blog
 
-https://gitee.com/huangking
+https://brianhuangxp.github.io
     
 ## 我的开源项目
 
-TODO
+https://gitee.com/huangking/css3-animat
+https://gitee.com/huangking/BootyBayGM
               
 ## 邮箱
 
