@@ -1,6 +1,8 @@
 ---
-title: 关于
-comment: false
+title: about
+date: 2018-10-15 11:39:03
+type: about
+layout: about
 ---
 
 ## 自我介绍
