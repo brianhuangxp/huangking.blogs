@@ -227,4 +227,16 @@
             background-color: rgba(102,128,153,.05);
         }
     }
+
+    figure {
+        figcaption {
+            span{
+                margin-left: 28px;
+                color: #a9b1b6;
+            }
+            a {
+                float: right;
+            }
+        }
+    }
 }

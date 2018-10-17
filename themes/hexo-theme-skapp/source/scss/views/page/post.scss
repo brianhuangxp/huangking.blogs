@@ -1,6 +1,6 @@
 @import '../../theme';
 @import '../../base/mixins';
-
+@import '../extend-tags/tags';
 body {
     @media screen and (min-width: $mq-desktop) {
         .page__post {

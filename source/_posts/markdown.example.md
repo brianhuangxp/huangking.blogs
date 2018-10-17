@@ -4,16 +4,10 @@ date: 2018-09-20
 tags: [markdown]
 categories: markdown
 ---
-<!--描述和more必须有 -->
-本文记录Markdown document基本例子。
+本文记录标准Markdown document实例。
 <!--more-->
 
-todo
-Test Markdown document
-======================
-
-Text
-----
+# Text
 
 Here is a paragraph with bold text. **This is some bold text.** Here is a
 paragraph with bold text. __This is also some bold text.__
@@ -24,8 +18,7 @@ another one with italic text. _This is some italic text._
 Here is another one with struckout text. ~~This is some struckout text.~~
 
 
-Links
------
+# Links
 
 Autolink: <http://www.baidu.com>
 
@@ -36,13 +29,10 @@ Reference style [link][1].
 [1]: http://www.baidu.com  "Example"
 
 
-Images****
-------
-
+# Images
 Image: ![My image](http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png)
 
-Headers
--------
+# Headers
 
 # First level title
 ## Second level title
@@ -52,7 +42,7 @@ Headers
 ###### Sixth level title
 
 ### Title with [link](http://localhost)
-### Title with ![image](http://localhost)
+### Title with ![image](http://mat1.gtimg.com/www/images/qq2012/qqlogo_1x.png)
 
 Code
 ----
