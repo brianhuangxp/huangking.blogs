@@ -111,3 +111,22 @@ array.map(callback[, thisArg])
 {% include_code title example.txt %}
 
 ![alt](//www.baidu.com/img/baidu_jgylogo3.gif)
+
+# 自定义标签
+
+## embed
+```
+{%embed src [width] [height]%}
+```
+
+```
+{%embed swf/xfish.swf%}
+or
+{%embed /assets/swf/xfish.swf 100% auto%}
+or
+{%embed http://xxxxx/assets/swf/xfish.swf%}
+or
+{%embed //xxxxx/assets/swf/xfish.swf%}
+```
+
+{%embed swf/xfish.swf%}

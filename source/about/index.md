@@ -39,4 +39,4 @@ https://gitee.com/huangking/BootyBayGM
 huangkingxp@126.com
 
 
-<embed src="/assets/swf/xfish.swf" width="100%" height="auto"></embed>
+{%embed swf/xfish.swf%}

@@ -8,16 +8,16 @@
 title: 一叶扁舟
 
 # subtitle in the banner header
-subtitle: 扁舟一叶 BLOG
+subtitle: 扁舟一叶
 
 # introduction  in the banner header
 subtitle_desc: 日常学习与兴趣交流
 
 # seo keyword
-keywords: minfive, minfive blog, 前端博客, 前端, 程序员, 前端开发, 全栈开发, node.js, javascript
+keywords: blog, 前端博客, 前端, java, 前端开发, 全栈开发, node.js, javascript
 
 # blog description（for seo）
-description: 个人博客，用于分享一些在日常学习工作甚至于生活中遇到的一些比较有趣的东西。七荤八素，胡言乱语，望各位看官见谅。
+description: 个人博客，用于分享一些在日常学习工作总结。胡言乱语，望各位看官见谅。
 
 # self introduction
 introduction: 不思量，自难忘！
@@ -46,7 +46,7 @@ loader_img: http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif
 
 # author information
 author:
-  name: huangking
+  name: brian
   link: https://github.com/brianhuangxp/huangking.blogs
 
 language: zh-cn
@@ -54,8 +54,8 @@ language: zh-cn
 # footer information
 about:
   info: 本站是基于 Hexo 搭建的静态资源博客，主要用于分享日常学习、生活及工作的一些心得总结，欢迎点击右下角订阅 rss。
-  address: Guangzhou, Guangdong Province, China
-  email: chenxiaowu1994@outlook.com
+  address: Xiamen, Fujian Province, China
+  email: huangkingxp@126.com
 # Site change end
 
 timezone: Asia/Shanghai

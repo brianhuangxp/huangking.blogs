@@ -7,15 +7,15 @@
         <h1 class="post__title">{{ page.title }}</h1>
 
         <div class="post__mark">
-            <div class="mark__block">
-                <i class="mark__icon iconfont icon-write"></i>
-                <ul class="mark__list clearfix">
-                    <li class="mark__item">
-                        <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting(author.name)) }}</a>
-                    </li>
-                </ul>
-            </div>
-            
+                <div class="mark__block">
+                    <i class="mark__icon iconfont icon-write"></i>
+                    <ul class="mark__list clearfix">
+                        <li class="mark__item">
+                            <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting('author').name) }}</a>
+                        </li>
+                    </ul>
+                </div>
+
             <div class="mark__block">
                 <i class="mark__icon iconfont icon-time"></i>
                 <ul class="mark__list clearfix">
