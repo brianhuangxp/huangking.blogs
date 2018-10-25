@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.7.1"
   },
+  "scripts": {
+    "sass-watch": "node-sass -w -r themes/hexo-theme-skapp/source/scss -o themes/hexo-theme-skapp/source/scss"
+  },
   "dependencies": {
     "hexo": "^3.7.0",
     "hexo-deployer-git": "^0.3.1",
