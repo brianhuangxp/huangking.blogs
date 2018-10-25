@@ -68,3 +68,7 @@ typings/
 # next.js build output
 .next
 .sass-cache
+
+
+themes/hexo-theme-skapp/source/scss/**/*.css
+themes/hexo-theme-skapp/source/scss/**/*.*.map
