@@ -29,14 +29,16 @@ favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
 logo: http://oo12ugek5.bkt.clouddn.com/images/logo-text-white.png
 
 # avatar
-avatar: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
+#avatar: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
+qrcode: /assets/qiniu/apcode.png
 # qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
 
 # page default cover
 default_cover: http://oo12ugek5.bkt.clouddn.com/images/default_cover.png
 
 # header background picture
-header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
+#header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
+header_cover: '@{qiNiu}/image/blog-bg.jpg'
 
 # 404 page background picture
 error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
@@ -45,10 +47,8 @@ error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
 loader_img: http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif
 
 # author information
-author:
-  name: brian
-  link: https://github.com/brianhuangxp/huangking.blogs
-
+author: brian
+authorLink: https://brianhuangxp.github.io
 language: zh-cn
 
 # footer information
@@ -210,3 +210,11 @@ deploy:
   - type: git
     repo: https://github.com/brianhuangxp/brianhuangxp.github.io
     branch: master
+
+# common parameter filter
+## @{qiNiu} in post.md file, it will replace with the value of qiNiu
+commonParametersFilter:
+  clouldResourceDomain:
+    qiNiu: http://pgzciqfe6.bkt.clouddn.com
+    css3Animat: https://huangking.gitee.io/css3-animat
+    myDojo: https://brianhuangxp.github.io/my-dojo

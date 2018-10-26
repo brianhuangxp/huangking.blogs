@@ -22,9 +22,13 @@
         </h3>
         <p class="mini-article__author">by 
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <a itemprop="url" href="{{ post.author.link }}" target="_blank">
-                    <span itemprop="name">{{ titlecase(post.author.nick) }}</span>
-                </a>
+                {% if post.author.link %}
+                    <a itemprop="url" href="{{ post.author.link }}" target="_blank">
+                        <span itemprop="name">{{ titlecase(post.author.nick|default(get_setting('author'))) }}</span>
+                    </a>
+                {% else %}
+                    <span itemprop="name">{{ titlecase(post.author.nick|default(get_setting('author'))) }}</span>
+                {% endif %}
             </span>
         </p>
         <p itemprop="articleSection" class="min-article__desc">

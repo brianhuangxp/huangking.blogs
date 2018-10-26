@@ -113,17 +113,11 @@ hexo.extend.generator.register('lunr', function(locals){
                 month: (language == 'en'?moment(post.date).locale('en').format('MMM'):moment(post.date).locale('zh-cn').format('MMMM')),
                 authorLink: post.author 
                     && post.author.link 
-                    || hexo.config.author
-                    && hexo.config.author.link
-                    || hexo.theme.author
-                    && hexo.theme.author.link
+                    || hexo.config.authorLink
                     || '/',
                 authorNick: post.author
                     && post.author.nick
                     || hexo.config.author
-                    && hexo.config.author.name
-                    || hexo.theme.author
-                    && hexo.theme.author.name
                     || 'unknow'
             };
         });

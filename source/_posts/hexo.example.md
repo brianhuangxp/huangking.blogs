@@ -1,7 +1,11 @@
 ---
 title: Hexo tags example
+subtitle: Hexo标签汇总
 date: 2018-08-20
 tags: [hexo, hexo-tag]
+author: 
+  nick: brian
+  link: https://brianhuangxp.github.io
 categories: hexo
 ---
 本文汇总Hexo官方以及自定义标签
@@ -130,3 +134,15 @@ or
 ```
 
 {%embed swf/xfish.swf%}
+
+# 自定义filter
+
+```
+before_post_render filter
+@{xxx} 将被替换。其中xxxx：为_config.yml的commonParametersFilter key替换为value
+
+例如
+@{qiNiu}/image/blog-bg.jpg
+```
+过滤后: @{qiNiu}/image/blog-bg.jpg
+![test image](@{qiNiu}/image/blog-bg.jpg)

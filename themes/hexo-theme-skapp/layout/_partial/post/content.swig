@@ -11,7 +11,7 @@
                     <i class="mark__icon iconfont icon-write"></i>
                     <ul class="mark__list clearfix">
                         <li class="mark__item">
-                            <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting('author').name) }}</a>
+                            <a href="{{ url_for(page.author.link || '') }}">{{ page.author.nick|default(get_setting('author')) }}</a>
                         </li>
                     </ul>
                 </div>
