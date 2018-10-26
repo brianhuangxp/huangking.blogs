@@ -1,8 +1,6 @@
 'use strict';
-const hexoUtils = require("./utils");
-
 hexo.extend.filter.register('before_post_render', function(data){
-    data.content = hexoUtils.contentReplace(data.content);
+    data.content = hexo.hexoUtils.contentReplace(data.content, hexo.config.commonParametersFilter);
 
     return data;
 });

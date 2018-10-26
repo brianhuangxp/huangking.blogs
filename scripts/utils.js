@@ -1,6 +1,8 @@
 'use strict';
 
-function contentReplace(content) {
+hexo.hexoUtils = {};
+
+hexo.hexoUtils.contentReplace = function (content) {
     if (content === undefined || typeof content.search !== 'function' || content.search(/@{.*}/g) == -1) {
         return content;
     }
@@ -13,12 +15,4 @@ function contentReplace(content) {
         }
     }
     return content;
-}
-
-let utils = {
-    contentReplace: contentReplace
 };
-
-
-
-module.exports = utils;
