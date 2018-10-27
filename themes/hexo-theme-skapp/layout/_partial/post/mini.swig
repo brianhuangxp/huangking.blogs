@@ -3,9 +3,9 @@
         {% if post.coverIframe %}
             <iframe width="100%" src="{{ join(post.coverIframe)}}" frameborder="0" allowfullscreen=""></iframe>
         {% elseif not post.cover %}
-                    <img itemprop="image" src="{{ get_setting('default_cover') }}" alt="{{ post.title }}"/>
+            <img itemprop="image" src="{{ get_setting('default_cover') }}" alt="{{ post.title }}"/>
         {% else %}
-            <img itemprop="image" src="{{ join(post.cover) }}" alt="{{ post.title }}"/>
+            <img itemprop="image" src="{{ join(post.cover) }}" style="{{ post.miniStyle }}" alt="{{ post.title }}"/>
         {% endif %}
 
         <div itemprop="datePublished" content="{{ data_xml(post.date || post.update) }}" class="mini-article__date">

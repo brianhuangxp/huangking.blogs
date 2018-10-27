@@ -8,7 +8,7 @@
 title: 一叶扁舟
 
 # subtitle in the banner header
-subtitle: 扁舟一叶
+subtitle: 一叶扁舟
 
 # introduction  in the banner header
 subtitle_desc: 日常学习与兴趣交流
@@ -23,18 +23,20 @@ description: 个人博客，用于分享一些在日常学习工作总结。胡�
 introduction: 不思量，自难忘！
 
 # your blog favicon icon, support two ways: local and online. the local way need you to put the icon under  themes/hexo-theme-skapp/source/img directory
-favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
+#favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
+favicon_ico: /assets/qiniu/favicon.ico
+#favicon_ico: '@{qiNiu}/favicon.ico'
 
 # blog logo icon in the upper left corner. support the local way and online way.
-logo: http://oo12ugek5.bkt.clouddn.com/images/logo-text-white.png
+logo: '@{qiNiu}/images/logo-text-white.png'
 
 # avatar
 #avatar: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
-qrcode: /assets/qiniu/apcode.png
+qrcode: '@{qiNiu}/images/apcode.png'
 # qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
 
 # page default cover
-default_cover: https://p0.ifengimg.com/fck/2018_33/1563038a440e9ca_w500_h266.gif
+default_cover: '@{qiNiu}/images/page-cover-default.gif'
 
 # header background picture
 #header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg

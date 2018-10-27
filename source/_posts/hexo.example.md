@@ -2,6 +2,10 @@
 title: Hexo tags example
 subtitle: Hexo标签汇总
 date: 2018-08-20
+cover: '@{qiNiu}/post/markdown-example.jpg'
+coverShow: true
+coverStyle: max-height:300px;object-fit:contain;
+miniStyle: height:100%;
 tags: [hexo, hexo-tag]
 author: 
   nick: brian

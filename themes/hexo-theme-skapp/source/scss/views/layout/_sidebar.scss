@@ -200,6 +200,8 @@ $title-falg-w: 4px      !default;
                 transform: translate(-50%, -50%);
                 display: block;
                 height: 100%;
+                width: 100%;
+                object-fit: cover;
             }
         }
 
