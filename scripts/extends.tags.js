@@ -6,3 +6,8 @@ hexo.extend.tag.register('embed', function(args, content){
     let height = args[2] || 'auto';
     return `<embed src="${src}" width="${width}" height="${height}"></embed>`;
 });
+
+hexo.extend.tag.register('join', function (...args) {
+    let result = args.join("");
+    return hexo.hexoUtils.contentReplace(result);
+});

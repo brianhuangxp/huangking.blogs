@@ -4,6 +4,11 @@ hexo.extend.helper.register('get_setting', function (...keys) {
     return hexo.hexoUtils.contentReplace(result);
 });
 
+hexo.extend.helper.register('join', function (...args) {
+    let result = args.join("");
+    return hexo.hexoUtils.contentReplace(result);
+});
+
 hexo.extend.helper.register('latest_post', function (len = 4) {
     const getTime = date => (new Date(this.date_xml(date))).getTime();
 

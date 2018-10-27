@@ -1,7 +1,9 @@
 <article class="page__post">
-    <div class="post__cover">
-        <img src="{{ page.cover|default(get_setting('default_cover')) }}" alt="{{ page.title }}">
-    </div>
+    {% if page.coverShow %}
+        <div class="post__cover">
+            <img src="{{ join(page.cover) }}" style="{{ page.coverStyle }}" alt="{{ page.title }}">
+        </div>
+    {% endif %}
 
     <header class="post__info">
         <h1 class="post__title">{{ page.title }}</h1>

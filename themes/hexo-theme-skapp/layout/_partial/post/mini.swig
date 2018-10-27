@@ -1,11 +1,13 @@
 <article itemscope itemtype="http://schema.org/Article" class="page__mini-article">
     <div class="mini-article__cover">
-        {% if not post.cover %}
-            <img itemprop="image" src="{{ get_setting('default_cover') }}" alt="{{ post.title }}"/>
+        {% if post.coverIframe %}
+            <iframe width="100%" src="{{ join(post.coverIframe)}}" frameborder="0" allowfullscreen=""></iframe>
+        {% elseif not post.cover %}
+                    <img itemprop="image" src="{{ get_setting('default_cover') }}" alt="{{ post.title }}"/>
+        {% else %}
+            <img itemprop="image" src="{{ join(post.cover) }}" alt="{{ post.title }}"/>
         {% endif %}
-        {% if post.cover %}
-            <img itemprop="image" src="{{ post.cover }}" alt="{{ post.title }}"/>
-        {% endif %}
+
         <div itemprop="datePublished" content="{{ data_xml(post.date || post.update) }}" class="mini-article__date">
             <span class="date__day">{{ date(post.date || post.update, 'D') }}</span>
             {% if config.language == 'zh-cn' %}

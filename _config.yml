@@ -34,11 +34,11 @@ qrcode: /assets/qiniu/apcode.png
 # qrcode: http://oo12ugek5.bkt.clouddn.com/images/qrcode.png
 
 # page default cover
-default_cover: http://oo12ugek5.bkt.clouddn.com/images/default_cover.png
+default_cover: https://p0.ifengimg.com/fck/2018_33/1563038a440e9ca_w500_h266.gif
 
 # header background picture
 #header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
-header_cover: '@{qiNiu}/image/blog-bg.jpg'
+header_cover: '@{qiNiu}/images/blog-bg.jpg'
 
 # 404 page background picture
 error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg

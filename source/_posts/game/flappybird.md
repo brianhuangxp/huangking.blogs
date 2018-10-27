@@ -1,6 +1,7 @@
 ---
 title: flappy brid Game
 date: 2018-9-20
+cover: /assets/images/post_imgs/flappybird.png
 tags: [html, game]
 categories: html
 ---
