@@ -19,11 +19,18 @@ hexo.extend.helper.register('latest_post', function (len = 4) {
     return `
         <ul class="block-list latest-post-list">
             ${ posts.reduce((p, post) => {
+                let mini;
+                if(post.coverIframe) {
+                    let coverIrame = hexo.hexoUtils.contentReplace(post.coverIframe);
+                    mini = `<iframe width="100%" src="${coverIrame}" frameborder="0" allowfullscreen=""></iframe>`
+                } else {
+                    mini = `<img src="${ hexo.hexoUtils.contentReplace(post.cover || hexo.config.default_cover)}" alt="${ post.title }" />`;
+                }
         return p + `
                     <li class="latest-post-item">
                         <a href="${ this.url_for(post.path) }" title="${ post.title }">
                             <div class="item__cover">
-                                <img src="${ hexo.hexoUtils.contentReplace(post.cover || hexo.config.default_cover)}" alt="${ post.title }" />
+                                ${mini}
                             </div>
                             <div class="item__info">
                                 <h3 class="item__title">${ post.title }</h3>
