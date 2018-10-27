@@ -1,7 +1,7 @@
 ---
 title: N-Block Game
 date: 2018-10-20
-tags: [dojo, arithmetic]
+tags: [dojo, arithmetic, game, html]
 categories: dojo
 ---
 本文记录N-Block Game
