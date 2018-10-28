@@ -9,4 +9,4 @@ categories: dojo
 
 ## N-Block Game
 
-{% iframe @{myDojo}/html/arithmetic/nBlock/ 100% 550px %}
+{% iframe @{myDojo}/html/arithmetic/nBlock/?v=@{version} 100% 550px %}

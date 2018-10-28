@@ -2,7 +2,7 @@
 title: markdown example
 subtitle: Markdown基本便签汇总
 date: 2018-09-20
-cover: '@{qiNiu}/post/markdown-example.jpg'
+cover: '@{qiNiu}/post/markdown-example.jpg?v=@{version}'
 coverStyle: max-height:300px;object-fit:contain;
 coverShow: true
 miniStyle: height:100%;

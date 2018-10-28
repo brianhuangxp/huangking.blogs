@@ -11,7 +11,7 @@ hexo.hexoUtils.contentReplace = function (content) {
     for (let groupKey in commonParametersFilter) {
         let group = commonParametersFilter[groupKey];
         for (let key in group) {
-            content = content.replace(new RegExp(`@{${key}}`, "gm"), group[key]);
+            content = content.replace(new RegExp(`@{${key}}`, "igm"), group[key]);
         }
     }
     return content;

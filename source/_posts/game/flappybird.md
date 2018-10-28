@@ -1,11 +1,11 @@
 ---
 title: flappy brid Game
 date: 2018-9-20
-cover: '@{qiNiu}/post/flappybird.png'
+cover: '@{qiNiu}/post/flappybird.png?v=@{version}'
 tags: [html, game]
 categories: html
 ---
 
 ## flappy brid Game
 
-{% iframe @{css3Animat}/flappybird 450px 550px %}
+{% iframe @{css3Animat}/flappybird/?v=@{version} 450px 650px %}

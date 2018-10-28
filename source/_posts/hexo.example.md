@@ -2,7 +2,7 @@
 title: Hexo tags example
 subtitle: Hexo标签汇总
 date: 2018-08-20
-cover: '@{qiNiu}/post/markdown-example.jpg'
+cover: '@{qiNiu}/post/markdown-example.jpg?v=@{version}'
 coverShow: true
 coverStyle: max-height:300px;object-fit:contain;
 miniStyle: height:100%;
@@ -148,5 +148,5 @@ before_post_render filter
 例如
 @{qiNiu}/image/blog-bg.jpg
 ```
-过滤后: @{qiNiu}/image/blog-bg.jpg
-![test image](@{qiNiu}/image/blog-bg.jpg)
+过滤后: @{qiNiu}/image/blog-bg.jpg?v=@{version}
+![test image](@{qiNiu}/image/blog-bg.jpg?v=@{version})

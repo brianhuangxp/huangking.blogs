@@ -24,8 +24,8 @@ introduction: 不思量，自难忘！
 
 # your blog favicon icon, support two ways: local and online. the local way need you to put the icon under  themes/hexo-theme-skapp/source/img directory
 #favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
-favicon_ico: /assets/qiniu/favicon.ico
-#favicon_ico: '@{qiNiu}/favicon.ico'
+#http://pgzciqfe6.bkt.clouddn.com/favicon.ico
+favicon_ico: '@{qiNiu}/images/favicon.ico'
 
 # blog logo icon in the upper left corner. support the local way and online way.
 logo: '@{qiNiu}/images/logo-text-white.png'
@@ -220,3 +220,6 @@ commonParametersFilter:
     qiNiu: http://pgzciqfe6.bkt.clouddn.com
     css3Animat: https://huangking.gitee.io/css3-animat
     myDojo: https://brianhuangxp.github.io/my-dojo
+    localhost: http://localhost:8080
+  site:
+    version: 1.00

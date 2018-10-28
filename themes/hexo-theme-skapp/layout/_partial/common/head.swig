@@ -14,7 +14,7 @@
 
 <link rel="canonical" href="{{ url }}">
 
-<link rel="icon" type="image/png" href="{{ get_setting('favicon_ico') }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ get_setting('favicon_ico') }}" sizes="64x64">
 
 <!-- Prefetch -->
 {% include './prefetch.swig' %}
