@@ -114,6 +114,7 @@ array.map(callback[, thisArg])
 
 ## Include Code
 ```
+本站代码导入，外站see #requestInclude
 {% include_code [title] [lang:language] path/to/file %}
 ```
 {% include_code title example.txt %}
@@ -138,6 +139,14 @@ or
 ```
 
 {%embed swf/xfish.swf%}
+
+## requestInclude
+```
+类似include_code, 允许有效的https站点
+例如 导入百度首页html
+{% requestInclude https://brianhuangxp.github.io/downloads/code/example.txt%}
+```
+{% requestInclude https://brianhuangxp.github.io/downloads/code/example.txt%}
 
 # 自定义filter
 

@@ -1,6 +1,9 @@
 - title: github
   icon: icon-github
   link: https://github.com/brianhuangxp
+- titile: gitee
+  icon: icon-gitee
+  link: https://gitee.com/huangking
 - title: email
   icon: icon-email
   link: mailto:huangkingxp@126.com

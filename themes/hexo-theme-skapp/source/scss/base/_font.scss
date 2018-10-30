@@ -73,3 +73,13 @@ $path: '../../fonts/';
 .icon-facebook:before { content: "\e601"; }
 
 .icon-in:before { content: "\e602"; }
+
+.icon-gitee:before {
+  content: "";
+  background: url("https://gitee.com/assets/favicon-e87ded4710611ed62adc859698277663.ico");
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-top: 2px;
+}
