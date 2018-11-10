@@ -80,10 +80,11 @@
             this.render();
 
             function resultProcess() {
-                var store = self.index.documentStore.store
+                var store = data.store;
                 for(var key in store) {
-                    //support file name as a key
-                    if(key.search('/' + self.queryString + '/') > -1) {
+                    var res = store[key];
+                    //support title as a key
+                    if(self.queryString === res.title) {
                         if(!self.result[key]) {
                             self.result.push({
                                 ref: key,
