@@ -1,6 +1,6 @@
 ---
 title: flappy brid Game
-date: 2018-9-20
+date: 2018-9-13
 cover: '@{qiNiu}/post/flappybird.png?v=@{version}'
 tags: [html, game]
 categories: html
