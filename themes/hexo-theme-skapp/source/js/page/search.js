@@ -113,7 +113,7 @@
             var result = (this.config.language == 'en'?'Sorry,the content of your search does not exist!':'抱歉，您要的内容似乎没有哦，不如换个关键字试试吧。');
             var self = this;
 
-            console.log("this:"+JSON.stringify(this));
+            // console.log("this:"+JSON.stringify(this));
             if (filteredData.length) {
                 this.filteredData = this.filteredData.map(function(item) {
                     item.tagsHtml = self.compileTemplate(self.tagsTpl, item.tagArr);

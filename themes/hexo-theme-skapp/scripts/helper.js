@@ -208,9 +208,9 @@ hexo.extend.helper.register('num_toArray', function(num) {
     return ret;
 });
 
-hexo.extend.helper.register('get_setting', function(...keys) {
+/*hexo.extend.helper.register('get_setting', function(...keys) {
     return keys.reduce((p, key) => (p || this.config[key] || this.theme[key]), void 0);
-});
+});*/
 
 hexo.extend.helper.register('tags', function() {
     let tags = this.site.tags.sort('name', 1).filter(tag => tag.length);
@@ -228,7 +228,7 @@ hexo.extend.helper.register('tags', function() {
     `;
 });
 
-hexo.extend.helper.register('latest_post', function(len = 4) {
+/*hexo.extend.helper.register('latest_post', function(len = 4) {
     const getTime = date => (new Date(this.date_xml(date))).getTime();
 
     let posts = this.site.posts.data
@@ -254,7 +254,7 @@ hexo.extend.helper.register('latest_post', function(len = 4) {
             }, '') }
         </ul>
     `;
-});
+});*/
 
 hexo.extend.helper.register('s_paginator', function(size = 2) {
     let page = this.page;

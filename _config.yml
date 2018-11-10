@@ -221,5 +221,4 @@ commonParametersFilter:
     css3Animat: https://huangking.gitee.io/css3-animat
     myDojo: https://brianhuangxp.github.io/my-dojo
     localhost: http://localhost:8080
-  site:
-    version: 1.00
+  siteVersion: 1.01

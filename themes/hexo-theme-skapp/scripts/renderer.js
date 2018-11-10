@@ -121,6 +121,17 @@ hexo.extend.generator.register('lunr', function(locals){
                     || 'unknow'
             };
         });
+        //replace all content
+        for (var key in store) {
+            let obj = store[key] || {};
+            for (let idx in obj) {
+                if (typeof obj[idx] !== 'function') {
+                    obj[idx] = hexo.hexoUtils.contentReplace(obj[idx] || "");
+                }
+            }
+        }
+
+
         finalData.push({
             path: pathFn.join(lunrPath, yearKey + ".json"),
             data: JSON.stringify({

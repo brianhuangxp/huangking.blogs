@@ -14,5 +14,7 @@ hexo.hexoUtils.contentReplace = function (content) {
             content = content.replace(new RegExp(`@{${key}}`, "igm"), group[key]);
         }
     }
+    let version = commonParametersFilter.siteVersion + "." + (new Date()).getTime();
+    content = content.replace(new RegExp(`@{version}`, "igm"), version);
     return content;
 };

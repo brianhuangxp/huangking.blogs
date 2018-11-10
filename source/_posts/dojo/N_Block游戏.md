@@ -4,7 +4,7 @@ date: 2018-10-20
 tags: [dojo, arithmetic, game, html]
 categories: dojo
 ---
-本文记录N-Block Game
+本文展示N-Block Game
 <!--more-->
 
 ## N-Block Game
