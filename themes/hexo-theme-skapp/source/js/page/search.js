@@ -71,11 +71,29 @@
 
         initSearch: function(data) {
             this.index = lunr.Index.load(data.index);
+            var self = this;
             this.sourceData = data.store;
             this.result = this.index.search(this.queryString);
+            resultProcess();
             this.filteredData = this.filterSourceData();
 
             this.render();
+
+            function resultProcess() {
+                var store = self.index.documentStore.store
+                for(var key in store) {
+                    //support file name as a key
+                    if(key.search('/' + self.queryString + '/') > -1) {
+                        if(!self.result[key]) {
+                            self.result.push({
+                                ref: key,
+                                score: 0.5
+                            })
+                        }
+                        return;
+                    }
+                }
+            }
         },
 
         compileTemplate: function(tpl, data) {
@@ -144,7 +162,7 @@
                 minNum = self.config.minNum;
                 
             this.result.forEach(function(row, idx){
-                if (self.config.minScore > row.score && idx >= self.config.minScore.minNum) {
+                if (self.config.minScore > row.score && idx >= self.config.minNum) {
                     return;
                 }
                 filteredData.push(self.sourceData[row.ref])
