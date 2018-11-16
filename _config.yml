@@ -39,14 +39,14 @@ qrcode: '@{qiNiu}/images/apcode.png'
 default_cover: '@{qiNiu}/images/page-cover-default.gif'
 
 # header background picture
-#header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
 header_cover: '@{qiNiu}/images/blog-bg.jpg'
 
 # 404 page background picture
 error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
 
 # page loading icon
-loader_img: http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif
+#loader_img: http://img.zcool.cn/community/012c0258d8bb35a801219c77694def.gif
+loader_img: '@{qiNiu}/images/loading.gif'
 
 # author information
 author: brian
