@@ -2,6 +2,15 @@
 
 hexo.hexoUtils = {};
 
+hexo.hexoUtils.getVersion = function() {
+    if(this.hasOwnProperty('version')) {
+        return this.version;
+    }
+    let commonParametersFilter = hexo.config.commonParametersFilter || {};
+    this.version = commonParametersFilter.siteVersion + "." + (new Date()).getTime();
+    return this.version;
+};
+
 hexo.hexoUtils.contentReplace = function (content) {
     if (content === undefined || typeof content.search !== 'function' || content.search(/@{.*}/g) == -1) {
         return content;
@@ -14,7 +23,6 @@ hexo.hexoUtils.contentReplace = function (content) {
             content = content.replace(new RegExp(`@{${key}}`, "igm"), group[key]);
         }
     }
-    let version = commonParametersFilter.siteVersion + "." + (new Date()).getTime();
-    content = content.replace(new RegExp(`@{version}`, "igm"), version);
+    content = content.replace(new RegExp(`@{version}`, "igm"), hexo.hexoUtils.getVersion());
     return content;
 };

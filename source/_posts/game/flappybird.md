@@ -1,6 +1,8 @@
 ---
 title: flappy brid Game
 date: 2018-9-13
+author: 
+  nick: Network
 cover: '@{qiNiu}/post/flappybird.png?v=@{version}'
 tags: [html, game]
 categories: html
