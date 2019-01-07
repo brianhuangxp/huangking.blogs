@@ -217,7 +217,7 @@ deploy:
 ## @{qiNiu} in post.md file, it will replace with the value of qiNiu
 commonParametersFilter:
   clouldResourceDomain:
-    qiNiu: http://pio83cyh9.bkt.clouddn.com
+    qiNiu: http://pkxrjbn4e.bkt.clouddn.com
     css3Animat: https://huangking.gitee.io/css3-animat
     myDojo: https://brianhuangxp.github.io/my-dojo
     localhost: http://localhost:8080
